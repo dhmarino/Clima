@@ -43,6 +43,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.lblVersion = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClima)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.timerActualizar)).BeginInit();
             this.SuspendLayout();
@@ -182,11 +183,21 @@
             this.label12.TabIndex = 12;
             this.label12.Text = "label12";
             // 
+            // lblVersion
+            // 
+            this.lblVersion.AutoSize = true;
+            this.lblVersion.Location = new System.Drawing.Point(382, 344);
+            this.lblVersion.Name = "lblVersion";
+            this.lblVersion.Size = new System.Drawing.Size(117, 25);
+            this.lblVersion.TabIndex = 13;
+            this.lblVersion.Text = "lblVersion";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(504, 352);
+            this.ClientSize = new System.Drawing.Size(504, 378);
+            this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -229,6 +240,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblVersion;
     }
 }
 

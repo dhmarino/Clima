@@ -24,6 +24,8 @@ namespace Clima
         public Form1()
         {
             InitializeComponent();
+            var versiones = typeof(Form1).Assembly.GetName().Version;
+            lblVersion.Text = "Versión " + versiones.ToString();
         }
 
         string temp;
