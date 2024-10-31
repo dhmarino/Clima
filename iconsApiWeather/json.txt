@@ -1,0 +1,10 @@
+{"coord":{"lon":-58.4312,"lat":-34.6218},
+"weather":[{"id":804,"main":"Clouds","description":"overcast clouds","icon":"04d"}],
+"base":"stations",
+"main":{"temp":22.64,"feels_like":23.23,"temp_min":21.92,"temp_max":23.28,"pressure":1016,"humidity":87},
+"visibility":10000,
+"wind":{"speed":10.28,"deg":110,"gust":0},
+"clouds":{"all":100},
+"dt":1709296937,
+"sys":{"type":2,"id":2092396,"country":"AR","sunrise":1709286096,"sunset":1709332241},
+"timezone":-10800,"id":3435874,"name":"Caballito","cod":200}
