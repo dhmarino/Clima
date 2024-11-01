@@ -8,6 +8,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Device.Location;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -124,14 +125,12 @@ namespace Clima
         public async void ObtenerValores()
         {
             string location = await GetLocationByIP();
-            
-            //https://openweathermap.org/api
-            //user: diego.marino@valid.com
-            //pwd: Valid123+-+
-            string key = "1051a9359d698003bb4052b4fc9c46c7";
-            //string latitud = "-34.6166786"; //@-34.6217612,-58.4311703,14z?
-            //string longitud = "-58.4274232";
 
+            //Obtenemos la Key de openweather desde nuestro archivo de seteos
+            var json = File.ReadAllText("appsettings.json");
+            var config = JObject.Parse(json);
+            string key = config["API_KEY"].ToString();
+            
             //Verificamos si hay proxi
             Uri testUri = new Uri("http://www.google.com");
             bool proxyRequired = IsProxyRequired(testUri);
